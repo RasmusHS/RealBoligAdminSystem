@@ -17,7 +17,7 @@ namespace RealBolig
             InitializeComponent();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)//Home knap
         {
             Home frm1 = new Home() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frm1.FormBorderStyle = FormBorderStyle.None;
