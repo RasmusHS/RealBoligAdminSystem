@@ -19,6 +19,7 @@ namespace RealBolig
 
         private void btnHome_Click(object sender, EventArgs e)//Home knap
         {
+            pContainer.Controls.Clear();
             Home frm1 = new Home() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frm1.FormBorderStyle = FormBorderStyle.None;
             this.pContainer.Controls.Add(frm1);
@@ -27,6 +28,7 @@ namespace RealBolig
 
         private void btnBolig_Click(object sender, EventArgs e)
         {
+            pContainer.Controls.Clear();
             AdminBolig frm2 = new AdminBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frm2.FormBorderStyle = FormBorderStyle.None;
             this.pContainer.Controls.Add(frm2);
