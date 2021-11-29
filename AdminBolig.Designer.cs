@@ -29,25 +29,58 @@ namespace RealBolig
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnTest = new System.Windows.Forms.Button();
+            this.btnCreateBolig = new System.Windows.Forms.Button();
+            this.btnReadBolig = new System.Windows.Forms.Button();
+            this.btnUpdateBolig = new System.Windows.Forms.Button();
+            this.btnDeleteBolig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnTest
+            // btnCreateBolig
             // 
-            this.btnTest.Location = new System.Drawing.Point(238, 152);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(75, 23);
-            this.btnTest.TabIndex = 0;
-            this.btnTest.Text = "Test Button";
-            this.btnTest.UseVisualStyleBackColor = true;
-            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            this.btnCreateBolig.Location = new System.Drawing.Point(132, 180);
+            this.btnCreateBolig.Name = "btnCreateBolig";
+            this.btnCreateBolig.Size = new System.Drawing.Size(124, 56);
+            this.btnCreateBolig.TabIndex = 0;
+            this.btnCreateBolig.Text = "Opret Ny Bolig";
+            this.btnCreateBolig.UseVisualStyleBackColor = true;
+            this.btnCreateBolig.Click += new System.EventHandler(this.btnTest_Click);
+            // 
+            // btnReadBolig
+            // 
+            this.btnReadBolig.Location = new System.Drawing.Point(262, 180);
+            this.btnReadBolig.Name = "btnReadBolig";
+            this.btnReadBolig.Size = new System.Drawing.Size(124, 56);
+            this.btnReadBolig.TabIndex = 1;
+            this.btnReadBolig.Text = "Indlæs Boliger";
+            this.btnReadBolig.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdateBolig
+            // 
+            this.btnUpdateBolig.Location = new System.Drawing.Point(392, 180);
+            this.btnUpdateBolig.Name = "btnUpdateBolig";
+            this.btnUpdateBolig.Size = new System.Drawing.Size(124, 56);
+            this.btnUpdateBolig.TabIndex = 2;
+            this.btnUpdateBolig.Text = "Opdater Bolig";
+            this.btnUpdateBolig.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteBolig
+            // 
+            this.btnDeleteBolig.Location = new System.Drawing.Point(522, 180);
+            this.btnDeleteBolig.Name = "btnDeleteBolig";
+            this.btnDeleteBolig.Size = new System.Drawing.Size(124, 56);
+            this.btnDeleteBolig.TabIndex = 3;
+            this.btnDeleteBolig.Text = "Slet Bolig";
+            this.btnDeleteBolig.UseVisualStyleBackColor = true;
             // 
             // AdminBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnTest);
+            this.Controls.Add(this.btnDeleteBolig);
+            this.Controls.Add(this.btnUpdateBolig);
+            this.Controls.Add(this.btnReadBolig);
+            this.Controls.Add(this.btnCreateBolig);
             this.Name = "AdminBolig";
             this.Text = "AdminBolig";
             this.Load += new System.EventHandler(this.AdminBolig_Load);
@@ -57,6 +90,9 @@ namespace RealBolig
 
         #endregion
 
-        private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.Button btnCreateBolig;
+        private System.Windows.Forms.Button btnReadBolig;
+        private System.Windows.Forms.Button btnUpdateBolig;
+        private System.Windows.Forms.Button btnDeleteBolig;
     }
 }
