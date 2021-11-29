@@ -12,8 +12,11 @@ namespace RealBolig
 {
     public partial class Main : Form
     {
+        public static Main MainInstance;
+
         public Main()
         {
+            MainInstance = this;
             InitializeComponent();
         }
 
@@ -36,9 +39,13 @@ namespace RealBolig
         {
             pContainer.Controls.Clear();
             AdminBolig frmABolig = new AdminBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmABolig.FormBorderStyle = FormBorderStyle.None;
-            this.pContainer.Controls.Add(frmABolig);
-            frmABolig.Show();
+
+            if(frmABolig.Visible == false)
+            {
+                frmABolig.FormBorderStyle = FormBorderStyle.None;
+                this.pContainer.Controls.Add(frmABolig);
+                frmABolig.Show();
+            }
         }
 
         private void btnKunder_Click(object sender, EventArgs e)
