@@ -42,8 +42,6 @@ namespace RealBolig
             {
                 MessageBox.Show("test");
             }
-            //frmCBolig.Show();
-            //Close();
         }
     }
 }
