@@ -64,6 +64,12 @@
     <Compile Include="AdminMægler.Designer.cs">
       <DependentUpon>AdminMægler.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateBolig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateBolig.Designer.cs">
+      <DependentUpon>CreateBolig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMægler.resx">
       <DependentUpon>AdminMægler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateBolig.resx">
+      <DependentUpon>CreateBolig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

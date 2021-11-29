@@ -20,28 +20,28 @@ namespace RealBolig
         private void btnHome_Click(object sender, EventArgs e)//Home knap
         {
             pContainer.Controls.Clear();
-            Home frm1 = new Home() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frm1.FormBorderStyle = FormBorderStyle.None;
-            this.pContainer.Controls.Add(frm1);
-            frm1.Show();
+            Home frmHome = new Home() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmHome.FormBorderStyle = FormBorderStyle.None;
+            this.pContainer.Controls.Add(frmHome);
+            frmHome.Show();
         }
 
         private void btnBolig_Click(object sender, EventArgs e)
         {
             pContainer.Controls.Clear();
-            AdminBolig frm2 = new AdminBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frm2.FormBorderStyle = FormBorderStyle.None;
-            this.pContainer.Controls.Add(frm2);
-            frm2.Show();
+            AdminBolig frmABolig = new AdminBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmABolig.FormBorderStyle = FormBorderStyle.None;
+            this.pContainer.Controls.Add(frmABolig);
+            frmABolig.Show();
         }
 
         private void btnKunder_Click(object sender, EventArgs e)
         {
             pContainer.Controls.Clear();
-            AdminKunder frm3 = new AdminKunder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frm3.FormBorderStyle = FormBorderStyle.None;
-            this.pContainer.Controls.Add(frm3);
-            frm3.Show();
+            AdminKunder frmAKunder = new AdminKunder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmAKunder.FormBorderStyle = FormBorderStyle.None;
+            this.pContainer.Controls.Add(frmAKunder);
+            frmAKunder.Show();
         }
     }
 }
