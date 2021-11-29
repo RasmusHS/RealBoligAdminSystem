@@ -63,6 +63,26 @@ namespace RealBolig.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _423ha0w8lq181 {
+            get {
+                object obj = ResourceManager.GetObject("423ha0w8lq181", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rvmngotdr0u71 {
+            get {
+                object obj = ResourceManager.GetObject("rvmngotdr0u71", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shopping_cart__1_ {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart (1)", resourceCulture);

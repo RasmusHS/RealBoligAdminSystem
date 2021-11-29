@@ -34,5 +34,14 @@ namespace RealBolig
             this.pContainer.Controls.Add(frm2);
             frm2.Show();
         }
+
+        private void btnKunder_Click(object sender, EventArgs e)
+        {
+            pContainer.Controls.Clear();
+            AdminKunder frm3 = new AdminKunder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frm3.FormBorderStyle = FormBorderStyle.None;
+            this.pContainer.Controls.Add(frm3);
+            frm3.Show();
+        }
     }
 }

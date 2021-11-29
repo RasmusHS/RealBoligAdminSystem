@@ -120,5 +120,11 @@
   <ItemGroup>
     <None Include="Resources\shopping-cart %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rvmngotdr0u71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\423ha0w8lq181.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
