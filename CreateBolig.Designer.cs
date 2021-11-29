@@ -292,7 +292,7 @@ namespace RealBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 645);
+            this.ClientSize = new System.Drawing.Size(1114, 658);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnOpretBolig);
             this.Controls.Add(this.btnGetPrice);
@@ -315,6 +315,7 @@ namespace RealBolig
             this.Controls.Add(this.maskedTextBox1);
             this.Name = "CreateBolig";
             this.Text = "CreateBolig";
+            this.Load += new System.EventHandler(this.CreateBolig_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

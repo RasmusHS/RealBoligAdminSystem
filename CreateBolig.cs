@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using Panel pContainer;
 
 namespace RealBolig
 {
@@ -15,6 +16,11 @@ namespace RealBolig
         public CreateBolig()
         {
             InitializeComponent();
+        }
+
+        private void CreateBolig_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
