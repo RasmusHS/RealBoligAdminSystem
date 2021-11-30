@@ -20,12 +20,6 @@ namespace RealBolig
             InitializeComponent();
         }
 
-        public Panel MainPanel
-        {
-            get {return pContainer; }
-            set {pContainer = value; }
-        }
-
         private void btnHome_Click(object sender, EventArgs e)//Home knap
         {
             pContainer.Controls.Clear();
