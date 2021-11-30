@@ -136,6 +136,12 @@
     <EmbeddedResource Include="AdminMægler.resx">
       <DependentUpon>AdminMægler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateBolig.resx">
+      <DependentUpon>CreateBolig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBolig.resx">
+      <DependentUpon>DeleteBolig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +158,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReadBolig.resx">
+      <DependentUpon>ReadBolig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBolig.resx">
+      <DependentUpon>UpdateBolig.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

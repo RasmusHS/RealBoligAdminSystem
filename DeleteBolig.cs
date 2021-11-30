@@ -16,5 +16,10 @@ namespace RealBolig
         {
             InitializeComponent();
         }
+
+        private void DeleteBolig_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
