@@ -70,6 +70,24 @@
     <Compile Include="CreateBolig.Designer.cs">
       <DependentUpon>CreateBolig.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateKunder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateKunder.Designer.cs">
+      <DependentUpon>CreateKunder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteBolig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBolig.Designer.cs">
+      <DependentUpon>DeleteBolig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteKunder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteKunder.Designer.cs">
+      <DependentUpon>DeleteKunder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,7 +102,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadBolig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadBolig.Designer.cs">
+      <DependentUpon>ReadBolig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadKunder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadKunder.Designer.cs">
+      <DependentUpon>ReadKunder.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemeColor.cs" />
+    <Compile Include="UpdateBolig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBolig.Designer.cs">
+      <DependentUpon>UpdateBolig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateKunder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateKunder.Designer.cs">
+      <DependentUpon>UpdateKunder.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminBolig.resx">
       <DependentUpon>AdminBolig.cs</DependentUpon>
     </EmbeddedResource>
