@@ -46,18 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminBolig.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminBolig.Designer.cs">
-      <DependentUpon>AdminBolig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AdminKunder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminKunder.Designer.cs">
-      <DependentUpon>AdminKunder.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminMægler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,12 +115,6 @@
     <Compile Include="UpdateKunder.Designer.cs">
       <DependentUpon>UpdateKunder.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminBolig.resx">
-      <DependentUpon>AdminBolig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdminKunder.resx">
-      <DependentUpon>AdminKunder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminMægler.resx">
       <DependentUpon>AdminMægler.cs</DependentUpon>
     </EmbeddedResource>
