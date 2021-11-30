@@ -34,6 +34,9 @@ namespace RealBolig
              Når man så skal lave en Update, så kan man opdater enten Bolig tabellen eller Bolig_Status tabellen.
              I Bolig_Status tabellen kan opdater den til at inkludere købers KiD, HandelsPris og/eller om de har Købt den bolig som BiD(FK) referer til. 
              Hvis HandelsDato ikke er NULL, så sættes Købt til 1.
+
+            Jeg har ikke lavet nogle af de ovennævnte ændringer endnu. Venter til jeg har snakket med jer andre om det. 
+            Dog er et nyt SQL script lagt ud på google drev. Scriptet indeholder CREATE TABLE sætninger der reflektere ovennævnte ændringer, men de kan ikke køres endnu. 
              */
         }
     }
