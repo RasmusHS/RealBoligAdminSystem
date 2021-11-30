@@ -121,6 +121,15 @@
     <EmbeddedResource Include="CreateBolig.resx">
       <DependentUpon>CreateBolig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateKunder.resx">
+      <DependentUpon>CreateKunder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBolig.resx">
+      <DependentUpon>DeleteBolig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteKunder.resx">
+      <DependentUpon>DeleteKunder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +146,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReadBolig.resx">
+      <DependentUpon>ReadBolig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadKunder.resx">
+      <DependentUpon>ReadKunder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBolig.resx">
+      <DependentUpon>UpdateBolig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateKunder.resx">
+      <DependentUpon>UpdateKunder.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
