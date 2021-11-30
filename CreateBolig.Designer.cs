@@ -301,6 +301,7 @@ namespace RealBolig
             this.Controls.Add(this.tabControl1);
             this.Name = "CreateBolig";
             this.Text = "CreateBolig";
+            this.Load += new System.EventHandler(this.CreateBolig_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabBoligTabel.ResumeLayout(false);
             this.tabBoligStatusTabel.ResumeLayout(false);
