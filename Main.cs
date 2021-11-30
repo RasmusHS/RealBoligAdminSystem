@@ -32,20 +32,20 @@ namespace RealBolig
         private void btnBolig_Click(object sender, EventArgs e)
         {
             pContainer.Controls.Clear();
-            AdminBolig frmABolig = new AdminBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            /*AdminBolig frmABolig = new AdminBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmABolig.FormBorderStyle = FormBorderStyle.None;
             this.pContainer.Controls.Add(frmABolig);
-            frmABolig.Show();
+            frmABolig.Show();*/
             
         }
 
         private void btnKunder_Click(object sender, EventArgs e)
         {
             pContainer.Controls.Clear();
-            AdminKunder frmAKunder = new AdminKunder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            /*AdminKunder frmAKunder = new AdminKunder() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmAKunder.FormBorderStyle = FormBorderStyle.None;
             this.pContainer.Controls.Add(frmAKunder);
-            frmAKunder.Show();
+            frmAKunder.Show();*/
         }
 
         public void btnMægler_Click(object sender, EventArgs e)//Test. Slettes senere.

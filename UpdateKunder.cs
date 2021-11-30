@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace RealBolig
 {
-    public partial class AdminKunder : Form
+    public partial class UpdateKunder : Form
     {
-        public AdminKunder()
+        public UpdateKunder()
         {
             InitializeComponent();
-        }
-
-        private void AdminKunder_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
