@@ -166,6 +166,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminBolig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBolig.Designer.cs">
+      <DependentUpon>AdminBolig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKunder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminKunder.Designer.cs">
+      <DependentUpon>AdminKunder.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMægler.cs">
       <SubType>Form</SubType>
     </Compile>

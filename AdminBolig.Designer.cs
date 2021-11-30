@@ -51,7 +51,7 @@ namespace RealBolig
             this.btnCreateBolig.TabIndex = 0;
             this.btnCreateBolig.Text = "Opret Ny Bolig";
             this.btnCreateBolig.UseVisualStyleBackColor = false;
-            this.btnCreateBolig.Click += new System.EventHandler(this.btnCreateBolig_Click);
+            this.btnCreateBolig.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // btnReadBolig
             // 

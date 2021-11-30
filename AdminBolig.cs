@@ -25,23 +25,18 @@ namespace RealBolig
 
         private void AdminBolig_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        public void btnCreateBolig_Click(object sender, EventArgs e)
+        private void btnCreateBolig_Click(object sender, EventArgs e)
         {
-            /*pContainer2.Controls.Clear();
+            pContainer.Controls.Clear();
             CreateBolig frmCBolig = new CreateBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmCBolig.FormBorderStyle = FormBorderStyle.None;
-            pContainer2.Controls.Add(frmCBolig);
-            frmCBolig.Show();*/
-            
-            CreateBolig frmCBolig = new CreateBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Hide();
-            if(pContainer2.Visible == false)
-            {
-                MessageBox.Show("test");
-            }
+            this.pContainer.Controls.Add(frmCBolig);
+            AdminBolig frmABolig = new AdminBolig();
+            frmABolig.Hide();
+            frmCBolig.Show();
         }
 
         
