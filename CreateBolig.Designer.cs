@@ -52,7 +52,6 @@ namespace RealBolig
             this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
             this.btnGetPrice = new System.Windows.Forms.Button();
             this.btnOpretBolig = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -277,23 +276,11 @@ namespace RealBolig
             this.btnOpretBolig.Text = "Opret Bolig";
             this.btnOpretBolig.UseVisualStyleBackColor = true;
             // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(12, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(101, 55);
-            this.btnBack.TabIndex = 20;
-            this.btnBack.Text = "Tilbage";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // CreateBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 658);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnOpretBolig);
             this.Controls.Add(this.btnGetPrice);
             this.Controls.Add(this.label8);
@@ -351,6 +338,5 @@ namespace RealBolig
         private System.Windows.Forms.MaskedTextBox maskedTextBox8;
         private System.Windows.Forms.Button btnGetPrice;
         private System.Windows.Forms.Button btnOpretBolig;
-        private System.Windows.Forms.Button btnBack;
     }
 }

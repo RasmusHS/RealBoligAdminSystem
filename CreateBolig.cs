@@ -22,11 +22,6 @@ namespace RealBolig
             
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGetPrice_Click(object sender, EventArgs e)
         {
 
