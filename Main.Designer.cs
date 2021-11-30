@@ -63,7 +63,7 @@ namespace RealBolig
             this.btnMægler.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMægler.FlatAppearance.BorderSize = 0;
             this.btnMægler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMægler.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMægler.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMægler.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMægler.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnMægler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -83,7 +83,7 @@ namespace RealBolig
             this.btnKunder.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnKunder.FlatAppearance.BorderSize = 0;
             this.btnKunder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKunder.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKunder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKunder.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnKunder.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnKunder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,7 +103,7 @@ namespace RealBolig
             this.btnBolig.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBolig.FlatAppearance.BorderSize = 0;
             this.btnBolig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBolig.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBolig.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBolig.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBolig.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnBolig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,7 +123,7 @@ namespace RealBolig
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHome.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
