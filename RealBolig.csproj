@@ -178,7 +178,6 @@
     <Compile Include="CreateBolig.Designer.cs">
       <DependentUpon>CreateBolig.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAL.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +270,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\423ha0w8lq181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{238aba4e-35a2-40cd-beb0-214a42bc42ac}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
