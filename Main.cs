@@ -12,9 +12,18 @@ namespace RealBolig
 {
     public partial class Main : Form
     {
+        public static Main MainInstance;
+
         public Main()
         {
+            MainInstance = this;
             InitializeComponent();
+        }
+
+        public Panel MainPanel
+        {
+            get {return pContainer; }
+            set {pContainer = value; }
         }
 
         private void btnHome_Click(object sender, EventArgs e)//Home knap
@@ -33,6 +42,7 @@ namespace RealBolig
             frmABolig.FormBorderStyle = FormBorderStyle.None;
             this.pContainer.Controls.Add(frmABolig);
             frmABolig.Show();
+            
         }
 
         private void btnKunder_Click(object sender, EventArgs e)
@@ -44,14 +54,13 @@ namespace RealBolig
             frmAKunder.Show();
         }
 
-        private void btnMægler_Click(object sender, EventArgs e)
+        public void btnMægler_Click(object sender, EventArgs e)//Test. Slettes senere.
         {
-            btnHome.Controls.Clear();
-            btnBolig.Controls.Clear();
-            btnKunder.Controls.Clear();
-            //AdminBolig.ActiveForm.Controls.Clear();
-            AdminBolig.ActiveForm.Dispose();
-            
+            pContainer.Controls.Clear();
+            CreateBolig frmCBolig = new CreateBolig() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmCBolig.FormBorderStyle = FormBorderStyle.None;
+            pContainer.Controls.Add(frmCBolig);
+            frmCBolig.Show();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace RealBolig
             this.btnReadBolig = new System.Windows.Forms.Button();
             this.btnUpdateBolig = new System.Windows.Forms.Button();
             this.btnDeleteBolig = new System.Windows.Forms.Button();
-            this.pContainer = new System.Windows.Forms.Panel();
+            this.pContainer2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnCreateBolig
@@ -98,14 +98,13 @@ namespace RealBolig
             this.btnDeleteBolig.Text = "Slet Bolig";
             this.btnDeleteBolig.UseVisualStyleBackColor = false;
             // 
-            // pContainer
+            // pContainer2
             // 
-            this.pContainer.AutoSize = true;
-            this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pContainer.Location = new System.Drawing.Point(0, 0);
-            this.pContainer.Name = "pContainer";
-            this.pContainer.Size = new System.Drawing.Size(871, 442);
-            this.pContainer.TabIndex = 4;
+            this.pContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pContainer2.Location = new System.Drawing.Point(0, 0);
+            this.pContainer2.Name = "pContainer2";
+            this.pContainer2.Size = new System.Drawing.Size(871, 442);
+            this.pContainer2.TabIndex = 4;
             // 
             // AdminBolig
             // 
@@ -116,7 +115,7 @@ namespace RealBolig
             this.Controls.Add(this.btnUpdateBolig);
             this.Controls.Add(this.btnReadBolig);
             this.Controls.Add(this.btnCreateBolig);
-            this.Controls.Add(this.pContainer);
+            this.Controls.Add(this.pContainer2);
             this.Name = "AdminBolig";
             this.Text = "AdminBolig";
             this.Load += new System.EventHandler(this.AdminBolig_Load);
@@ -131,6 +130,6 @@ namespace RealBolig
         private System.Windows.Forms.Button btnReadBolig;
         private System.Windows.Forms.Button btnUpdateBolig;
         private System.Windows.Forms.Button btnDeleteBolig;
-        private System.Windows.Forms.Panel pContainer;
+        private System.Windows.Forms.Panel pContainer2;
     }
 }

@@ -17,9 +17,9 @@ namespace RealBolig
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void CreateBolig_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnGetPrice_Click(object sender, EventArgs e)
