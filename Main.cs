@@ -43,5 +43,15 @@ namespace RealBolig
             this.pContainer.Controls.Add(frmAKunder);
             frmAKunder.Show();
         }
+
+        private void btnMægler_Click(object sender, EventArgs e)
+        {
+            btnHome.Controls.Clear();
+            btnBolig.Controls.Clear();
+            btnKunder.Controls.Clear();
+            //AdminBolig.ActiveForm.Controls.Clear();
+            AdminBolig.ActiveForm.Dispose();
+            
+        }
     }
 }

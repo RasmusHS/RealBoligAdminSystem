@@ -30,15 +30,15 @@ namespace RealBolig
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnMægler = new System.Windows.Forms.Button();
+            this.btnKunder = new System.Windows.Forms.Button();
+            this.btnBolig = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pContainer = new System.Windows.Forms.Panel();
-            this.btnMægler = new System.Windows.Forms.Button();
-            this.btnKunder = new System.Windows.Forms.Button();
-            this.btnBolig = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -58,64 +58,12 @@ namespace RealBolig
             this.panelMenu.Size = new System.Drawing.Size(220, 765);
             this.panelMenu.TabIndex = 0;
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Controls.Add(this.label1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(49, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "RealBolig A/S";
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(993, 80);
-            this.panelTitleBar.TabIndex = 1;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(452, 23);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(93, 33);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "HOME";
-            // 
-            // pContainer
-            // 
-            this.pContainer.BackColor = System.Drawing.Color.White;
-            this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pContainer.Location = new System.Drawing.Point(220, 80);
-            this.pContainer.Name = "pContainer";
-            this.pContainer.Size = new System.Drawing.Size(993, 685);
-            this.pContainer.TabIndex = 2;
-            // 
             // btnMægler
             // 
             this.btnMægler.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMægler.FlatAppearance.BorderSize = 0;
             this.btnMægler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMægler.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMægler.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMægler.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMægler.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnMægler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,13 +76,14 @@ namespace RealBolig
             this.btnMægler.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMægler.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMægler.UseVisualStyleBackColor = true;
+            this.btnMægler.Click += new System.EventHandler(this.btnMægler_Click);
             // 
             // btnKunder
             // 
             this.btnKunder.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnKunder.FlatAppearance.BorderSize = 0;
             this.btnKunder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKunder.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKunder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKunder.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnKunder.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnKunder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,7 +103,7 @@ namespace RealBolig
             this.btnBolig.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBolig.FlatAppearance.BorderSize = 0;
             this.btnBolig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBolig.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBolig.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBolig.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBolig.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnBolig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +123,7 @@ namespace RealBolig
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHome.Image = global::RealBolig.Properties.Resources.shopping_cart__1_;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -188,6 +137,58 @@ namespace RealBolig
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.label1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(220, 80);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(49, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "RealBolig A/S";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.lblTitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(993, 80);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(452, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(85, 29);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "HOME";
+            // 
+            // pContainer
+            // 
+            this.pContainer.BackColor = System.Drawing.Color.White;
+            this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pContainer.Location = new System.Drawing.Point(220, 80);
+            this.pContainer.Name = "pContainer";
+            this.pContainer.Size = new System.Drawing.Size(993, 685);
+            this.pContainer.TabIndex = 2;
             // 
             // Main
             // 

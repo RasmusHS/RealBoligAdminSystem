@@ -32,5 +32,7 @@ namespace RealBolig
             frmABolig.Hide();
             frmCBolig.Show();
         }
+
+        
     }
 }
