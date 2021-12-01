@@ -9,7 +9,7 @@ namespace RealBolig.DAL.Entities
 {
     public class EKunde
     {
-
+        public int KiD { get; set; }
         public string FuldeNavn { get; set; }
         public int Tlf { get; set; }
         public string Mail { get; set; }

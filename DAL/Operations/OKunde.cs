@@ -11,28 +11,45 @@ namespace RealBolig.DAL.Operations
     public class OKunde
     {
 
-        SqlConnection conn = new SqlConnection(@"Data Source = mssql2.unoeuro.com; Initial Catalog = kaspermark_dk_db_realbolig; Persist Security Info=True;User ID = kaspermark_dk; Password=69qom3u9PW");
+        SqlConnection conn = new SqlConnection(@"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;User ID=kaspermark_dk; Password=69qom3u9PW");
 
         //CRUD
-        public void Insert(EKunde kd)
+        public void Insert(EKunde kdInsert)
         {
             conn.Open();
-            string query = "INSERT INTO Kunde VALUES ('"+kd.FuldeNavn+"', "+kd.Tlf+", '"+kd.Mail+"', '"+kd.Adresse+"');";
+            string query = "INSERT INTO Kunde VALUES ('"+ kdInsert.FuldeNavn+"', "+ kdInsert.Tlf+", '"+ kdInsert.Mail+"', '"+ kdInsert.Adresse+"');";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Close();        
+        }
+
+        public void Delete(EKunde kdDelete) {
+            conn.Open();
+            string query = "DELETE FROM Kunde WHERE "+kdDelete.KiD+";";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Close();
         }
 
-        public void Delete() { 
-        
+        public void Update(EKunde kdUpdate) {
+
+            conn.Open();
+
+            string query = "UPDATE Kunde SET column1 = value1, column2 = value2, ... WHERE condition; "; //Hjælp
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Close();
+
         }
 
-        public void Update() { 
-        
-        }
+        public void Select(EKunde kdSelect) {
 
-        public void Select() { 
-        
+            conn.Open();
+            string query = "SELECT * FROM Kunde WHERE " + kdSelect.KiD + ";";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Close();
+
         }
 
     }
