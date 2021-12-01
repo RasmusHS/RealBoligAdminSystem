@@ -51,6 +51,7 @@ namespace RealBolig
 
         private void btnHome_Click(object sender, EventArgs e)//Home knap
         {
+            activeForm.Close();
             hideSubMenu();
         }
 
@@ -63,7 +64,7 @@ namespace RealBolig
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new CreateBolig());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
