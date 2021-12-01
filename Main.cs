@@ -51,7 +51,8 @@ namespace RealBolig
 
         private void btnHome_Click(object sender, EventArgs e)//Home knap
         {
-            activeForm.Close();
+            if (activeForm != null)
+                activeForm.Close();
             hideSubMenu();
         }
 
