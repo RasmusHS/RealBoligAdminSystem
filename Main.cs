@@ -54,6 +54,7 @@ namespace RealBolig
             if (activeForm != null)
                 activeForm.Close();
             hideSubMenu();
+            //flere koder
         }
 
         private void btnBolig_Click(object sender, EventArgs e)
