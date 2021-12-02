@@ -17,7 +17,7 @@ namespace RealBolig.DAL.Operations
         public void Insert(EMælger mInsert)
         {
             conn.Open();
-            string query = "INSERT INTO Kunde VALUES ('" + mInsert.FuldeNavn + "', " + mInsert.Tlf + ", '" + mInsert.Mail + "', '" + mInsert.Adresse + "');";
+            string query = "INSERT INTO Kunde VALUES ('" + mInsert.FuldeNavn + "', " + mInsert.Tlf + ", '" + mInsert.Mail + "');";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Close();

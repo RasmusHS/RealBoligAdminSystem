@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace RealBolig
 {
@@ -19,6 +21,8 @@ namespace RealBolig
 
         private void DeleteBolig_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet.Bolig' table. You can move, or remove it, as needed.
+            this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
 
         }
     }

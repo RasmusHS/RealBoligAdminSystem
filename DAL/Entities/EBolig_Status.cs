@@ -17,7 +17,7 @@ namespace RealBolig.DAL.Entities
         public string Adresse { get; set; }
 
 
-        public EKunde(string FuldeNavn, int Tlf, string Mail, string Adresse)
+        public EBolig_Status(string FuldeNavn, int Tlf, string Mail, string Adresse)
         {
 
             this.FuldeNavn = FuldeNavn;
