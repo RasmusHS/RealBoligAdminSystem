@@ -11,7 +11,7 @@ namespace RealBolig.DAL.Operations
     class OMælger
     {
 
-        SqlConnection conn = new SqlConnection(@"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;User ID=kaspermark_dk; Password=69qom3u9PW");
+        SqlConnection conn = new SqlConnection(@"Server=mssql2.unoeuro.com; Database=kaspermark_dk_db_realbolig; User ID=kaspermark_dk; Password=69qom3u9PW; Encrypt=False; TrustServerCertificate=True");
 
         //CRUD
         public void Insert(EMælger mInsert)

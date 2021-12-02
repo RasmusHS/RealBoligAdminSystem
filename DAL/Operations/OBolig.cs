@@ -11,7 +11,9 @@ namespace RealBolig.DAL.Operations
     class OBolig
     {
 
-        SqlConnection conn = new SqlConnection(@"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;User ID=kaspermark_dk; Password=69qom3u9PW");
+        SqlConnection conn = new SqlConnection(@"Server=mssql2.unoeuro.com; Database=kaspermark_dk_db_realbolig; User ID=kaspermark_dk; Password=69qom3u9PW; Encrypt=False; TrustServerCertificate=True");
+        //string strconn = @"Server=mssql2.unoeuro.com; Database=kaspermark_dk_db_realbolig; User ID=kaspermark_dk; Password=69qom3u9PW";
+        //SqlConnection conn = new SqlConnection(strconn);
 
         //CRUD
         public void Insert(EBolig bInsert)
