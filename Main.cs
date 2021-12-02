@@ -54,6 +54,7 @@ namespace RealBolig
             if (activeForm != null)
                 activeForm.Close();
             hideSubMenu();
+            //flere koder
         }
 
         private void btnBolig_Click(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace RealBolig
 
         #region BoligSubMenu
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSubMenuOpretBolig_Click(object sender, EventArgs e)
         {
             openFormsLoader(new CreateBolig());
 
@@ -72,30 +73,27 @@ namespace RealBolig
             */
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSubMenuIndlæsBolig_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new ReadBolig());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
             */
         }
 
-
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSubMenuOpdaterBolig_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new UpdateBolig());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
             */
         }
 
-
-        private void button4_Click(object sender, EventArgs e)
+        private void btnSubMenuSletBolig_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new DeleteBolig());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
@@ -110,39 +108,37 @@ namespace RealBolig
         }
 
         #region KunderSubMenu
-        private void button5_Click(object sender, EventArgs e)
+
+        private void btnSubMenuOpretKunde_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new CreateKunde());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
             */
         }
 
-
-        private void button6_Click(object sender, EventArgs e)
+        private void btnSubMenuIndlæsKunde_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new ReadKunde());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
             */
         }
 
-
-        private void button7_Click(object sender, EventArgs e)
+        private void btnSubMenuOpdaterKunde_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new UpdateKunde());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
             */
         }
 
-
-        private void button8_Click(object sender, EventArgs e)
+        private void btnSubMenuSletKunde_Click(object sender, EventArgs e)
         {
-            //Indtast kode
+            openFormsLoader(new DeleteKunde());
 
             /* Hvis submenuen ønskes at hides når der trykkes
             hideSubMenu();
@@ -221,8 +217,9 @@ namespace RealBolig
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
