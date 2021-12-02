@@ -196,8 +196,12 @@
     <Compile Include="CreateKunde.Designer.cs">
       <DependentUpon>CreateKunde.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAL\Entities\EBolig_Status.cs" />
     <Compile Include="DAL\Entities\EKunde.cs" />
+    <Compile Include="DAL\Entities\EMælger.cs" />
+    <Compile Include="DAL\Operations\OBolig_Status.cs" />
     <Compile Include="DAL\Operations\OKunde.cs" />
+    <Compile Include="DAL\Operations\OMælger.cs" />
     <Compile Include="DeleteBolig.cs">
       <SubType>Form</SubType>
     </Compile>
