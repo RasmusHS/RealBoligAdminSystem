@@ -17,7 +17,7 @@ namespace RealBolig.DAL.Operations
         
 
         //CRUD
-        public bool Insert(EBolig bInsert)
+        public void Insert(EBolig bInsert)
         {
             // assumption:
             bool KundeID_ok = true, PostNR_ok = true, Adresse_ok = true, Område_ok = true, Kvm_ok = true, SalgsPris_ok = true; ;
@@ -130,7 +130,7 @@ namespace RealBolig.DAL.Operations
                 MessageBox.Show("Der må kun indtastes tal i Salgs Pris feltet, samt maks 23 tegn.");
                 
             }
-            return true;
+            
         }
 
         /*public void Delete(EBolig bDelete)
