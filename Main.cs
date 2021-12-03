@@ -49,7 +49,7 @@ namespace RealBolig
 
 
 
-        private void btnHome_Click(object sender, EventArgs e)//Home knap
+        private void btnHome_Click_1(object sender, EventArgs e)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -147,13 +147,23 @@ namespace RealBolig
 
         #endregion
 
-        private void btnMægler_Click(object sender, EventArgs e)
+        private void btnMægler_Click_1(object sender, EventArgs e)
         {
             showSubMenu(panelMæglerSubMenu);
         }
 
         #region MæglerSubMenu
-        private void button9_Click(object sender, EventArgs e)
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            //Indtast kode
+
+            /* Hvis submenuen ønskes at hides når der trykkes
+            hideSubMenu();
+            */
+        }
+
+
+        private void button11_Click_1(object sender, EventArgs e)
         {
             //Indtast kode
 
@@ -173,17 +183,7 @@ namespace RealBolig
         }
 
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            //Indtast kode
-
-            /* Hvis submenuen ønskes at hides når der trykkes
-            hideSubMenu();
-            */
-        }
-
-
-        private void button12_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
             //Indtast kode
 
@@ -194,7 +194,7 @@ namespace RealBolig
 
         #endregion
 
-        private void btnHjælp_Click(object sender, EventArgs e)
+        private void btnHjælp_Click_1(object sender, EventArgs e)
         {
             //indtast kode til den form den skal linke til
 
@@ -221,5 +221,7 @@ namespace RealBolig
         {
 
         }
+
+
     }
 }
