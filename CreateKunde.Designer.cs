@@ -32,6 +32,13 @@ namespace RealBolig
             this.components = new System.ComponentModel.Container();
             this.btnOpretKunde = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kiDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fuldeNavnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tlfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kundeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kaspermark_dk_db_realboligDataSet = new RealBolig.kaspermark_dk_db_realboligDataSet();
             this.labelAdresse = new System.Windows.Forms.Label();
             this.mAdresseTextBox = new System.Windows.Forms.MaskedTextBox();
             this.labelMail = new System.Windows.Forms.Label();
@@ -41,18 +48,11 @@ namespace RealBolig
             this.labelFnavn = new System.Windows.Forms.Label();
             this.mFnavnTextBox = new System.Windows.Forms.MaskedTextBox();
             this.kundeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kaspermark_dk_db_realboligDataSet = new RealBolig.kaspermark_dk_db_realboligDataSet();
-            this.kundeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kundeTableAdapter = new RealBolig.kaspermark_dk_db_realboligDataSetTableAdapters.KundeTableAdapter();
-            this.kiDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fuldeNavnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tlfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kundeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kundeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kundeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOpretKunde
@@ -64,6 +64,7 @@ namespace RealBolig
             this.btnOpretKunde.TabIndex = 19;
             this.btnOpretKunde.Text = "Opret Kunde";
             this.btnOpretKunde.UseVisualStyleBackColor = true;
+            this.btnOpretKunde.Click += new System.EventHandler(this.btnOpretKunde_Click);
             // 
             // dataGridView1
             // 
@@ -81,6 +82,47 @@ namespace RealBolig
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(545, 338);
             this.dataGridView1.TabIndex = 18;
+            // 
+            // kiDDataGridViewTextBoxColumn
+            // 
+            this.kiDDataGridViewTextBoxColumn.DataPropertyName = "KiD";
+            this.kiDDataGridViewTextBoxColumn.HeaderText = "KiD";
+            this.kiDDataGridViewTextBoxColumn.Name = "kiDDataGridViewTextBoxColumn";
+            this.kiDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fuldeNavnDataGridViewTextBoxColumn
+            // 
+            this.fuldeNavnDataGridViewTextBoxColumn.DataPropertyName = "FuldeNavn";
+            this.fuldeNavnDataGridViewTextBoxColumn.HeaderText = "FuldeNavn";
+            this.fuldeNavnDataGridViewTextBoxColumn.Name = "fuldeNavnDataGridViewTextBoxColumn";
+            // 
+            // tlfDataGridViewTextBoxColumn
+            // 
+            this.tlfDataGridViewTextBoxColumn.DataPropertyName = "Tlf";
+            this.tlfDataGridViewTextBoxColumn.HeaderText = "Tlf";
+            this.tlfDataGridViewTextBoxColumn.Name = "tlfDataGridViewTextBoxColumn";
+            // 
+            // mailDataGridViewTextBoxColumn
+            // 
+            this.mailDataGridViewTextBoxColumn.DataPropertyName = "Mail";
+            this.mailDataGridViewTextBoxColumn.HeaderText = "Mail";
+            this.mailDataGridViewTextBoxColumn.Name = "mailDataGridViewTextBoxColumn";
+            // 
+            // adresseDataGridViewTextBoxColumn
+            // 
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            // 
+            // kundeBindingSource1
+            // 
+            this.kundeBindingSource1.DataMember = "Kunde";
+            this.kundeBindingSource1.DataSource = this.kaspermark_dk_db_realboligDataSet;
+            // 
+            // kaspermark_dk_db_realboligDataSet
+            // 
+            this.kaspermark_dk_db_realboligDataSet.DataSetName = "kaspermark_dk_db_realboligDataSet";
+            this.kaspermark_dk_db_realboligDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelAdresse
             // 
@@ -158,50 +200,9 @@ namespace RealBolig
             // 
             this.kundeBindingSource.DataMember = "Kunde";
             // 
-            // kaspermark_dk_db_realboligDataSet
-            // 
-            this.kaspermark_dk_db_realboligDataSet.DataSetName = "kaspermark_dk_db_realboligDataSet";
-            this.kaspermark_dk_db_realboligDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kundeBindingSource1
-            // 
-            this.kundeBindingSource1.DataMember = "Kunde";
-            this.kundeBindingSource1.DataSource = this.kaspermark_dk_db_realboligDataSet;
-            // 
             // kundeTableAdapter
             // 
             this.kundeTableAdapter.ClearBeforeFill = true;
-            // 
-            // kiDDataGridViewTextBoxColumn
-            // 
-            this.kiDDataGridViewTextBoxColumn.DataPropertyName = "KiD";
-            this.kiDDataGridViewTextBoxColumn.HeaderText = "KiD";
-            this.kiDDataGridViewTextBoxColumn.Name = "kiDDataGridViewTextBoxColumn";
-            this.kiDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fuldeNavnDataGridViewTextBoxColumn
-            // 
-            this.fuldeNavnDataGridViewTextBoxColumn.DataPropertyName = "FuldeNavn";
-            this.fuldeNavnDataGridViewTextBoxColumn.HeaderText = "FuldeNavn";
-            this.fuldeNavnDataGridViewTextBoxColumn.Name = "fuldeNavnDataGridViewTextBoxColumn";
-            // 
-            // tlfDataGridViewTextBoxColumn
-            // 
-            this.tlfDataGridViewTextBoxColumn.DataPropertyName = "Tlf";
-            this.tlfDataGridViewTextBoxColumn.HeaderText = "Tlf";
-            this.tlfDataGridViewTextBoxColumn.Name = "tlfDataGridViewTextBoxColumn";
-            // 
-            // mailDataGridViewTextBoxColumn
-            // 
-            this.mailDataGridViewTextBoxColumn.DataPropertyName = "Mail";
-            this.mailDataGridViewTextBoxColumn.HeaderText = "Mail";
-            this.mailDataGridViewTextBoxColumn.Name = "mailDataGridViewTextBoxColumn";
-            // 
-            // adresseDataGridViewTextBoxColumn
-            // 
-            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
-            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
-            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
             // 
             // CreateKunde
             // 
@@ -222,9 +223,9 @@ namespace RealBolig
             this.Text = "CreateKunde";
             this.Load += new System.EventHandler(this.CreateKunde_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kundeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kundeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kundeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
