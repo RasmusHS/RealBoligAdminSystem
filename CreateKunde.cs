@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using RealBolig.DAL.Operations;
+using RealBolig.DAL.Entities;
+
 
 namespace RealBolig
 {
     public partial class CreateKunde : Form
     {
-        string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW"; //Connection string to a local SQL DB
-        private const bool test = false;
-
+        
         public CreateKunde()
         {
             InitializeComponent();
@@ -36,6 +37,17 @@ namespace RealBolig
             string Mail = mMailTextBox.Text;
             string Adresse = mAdresseTextBox.Text;
 
+            EKunde kd = new EKunde(FuldeNavn, Tlf, Mail, Adresse);
+            OKunde kdOP = new OKunde();
+
+            kdOP.Insert(kd);
+
+            mFnavnTextBox.Text = "";
+            mTlfTextBox.Text = "";
+            mMailTextBox.Text = "";
+            mAdresseTextBox.Text = "";
+            this.kundeTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Kunde);
+            /*
             // assumption:
             bool FuldeNavn_ok = true, Tlf_ok = true, Mail_ok = true, Adresse_ok = true;
 
@@ -121,6 +133,7 @@ namespace RealBolig
                 MessageBox.Show("Der må maks være 75 tegn i Adresse feltet.");
                 mAdresseTextBox.Text = "";
             }
+            */
         }
     }
 }
