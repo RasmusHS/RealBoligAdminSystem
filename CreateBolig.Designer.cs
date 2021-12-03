@@ -102,6 +102,7 @@ namespace RealBolig
             this.btnOpretBolig.TabIndex = 33;
             this.btnOpretBolig.Text = "Opret Bolig";
             this.btnOpretBolig.UseVisualStyleBackColor = true;
+            this.btnOpretBolig.Click += new System.EventHandler(this.btnOpretBolig_Click);
             // 
             // btnForslåPris
             // 
@@ -430,7 +431,7 @@ namespace RealBolig
             this.Controls.Add(this.tabControl1);
             this.Name = "CreateBolig";
             this.Text = "CreateBolig";
-            this.Load += new System.EventHandler(this.CreateBolig_Load_1);
+            this.Load += new System.EventHandler(this.CreateBolig_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabBoligTabel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

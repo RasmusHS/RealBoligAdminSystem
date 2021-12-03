@@ -24,10 +24,11 @@ namespace RealBolig
 
         private void CreateBolig_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet2.Kunde' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet.Kunde' table. You can move, or remove it, as needed.
             this.kundeTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Kunde);
-            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet2.Bolig' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet.Bolig' table. You can move, or remove it, as needed.
             this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
+
         }
 
         private void btnOpretBolig_Click(object sender, EventArgs e)
@@ -163,15 +164,6 @@ namespace RealBolig
                 MessageBox.Show("Der må kun indtastes tal i Salgs Pris feltet, samt maks 23 tegn.");
                 mSalgsPrisTextbox.Text = "";
             }
-        }
-
-        private void CreateBolig_Load_1(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet.Kunde' table. You can move, or remove it, as needed.
-            this.kundeTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Kunde);
-            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet.Bolig' table. You can move, or remove it, as needed.
-            this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
-
         }
     }
 }
