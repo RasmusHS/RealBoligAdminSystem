@@ -69,7 +69,7 @@ namespace RealBolig
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(418, 23);
+            this.lblTitle.Location = new System.Drawing.Point(638, 23);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(85, 29);
             this.lblTitle.TabIndex = 0;
@@ -308,7 +308,7 @@ namespace RealBolig
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(983, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(1423, 80);
             this.panelTitleBar.TabIndex = 4;
             // 
             // btnMægler
@@ -492,14 +492,14 @@ namespace RealBolig
             this.panelFormsLoader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormsLoader.Location = new System.Drawing.Point(0, 0);
             this.panelFormsLoader.Name = "panelFormsLoader";
-            this.panelFormsLoader.Size = new System.Drawing.Size(1213, 915);
+            this.panelFormsLoader.Size = new System.Drawing.Size(1653, 915);
             this.panelFormsLoader.TabIndex = 5;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 915);
+            this.ClientSize = new System.Drawing.Size(1653, 915);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelFormsLoader);
