@@ -85,18 +85,16 @@ namespace RealBolig
             // 
             // mOmrådeTextbox
             // 
-            this.mOmrådeTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mOmrådeTextbox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mOmrådeTextbox.Location = new System.Drawing.Point(352, 287);
+            this.mOmrådeTextbox.Location = new System.Drawing.Point(139, 198);
             this.mOmrådeTextbox.Name = "mOmrådeTextbox";
             this.mOmrådeTextbox.Size = new System.Drawing.Size(330, 30);
             this.mOmrådeTextbox.TabIndex = 27;
             // 
             // btnOpretBolig
             // 
-            this.btnOpretBolig.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnOpretBolig.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpretBolig.Location = new System.Drawing.Point(430, 649);
+            this.btnOpretBolig.Location = new System.Drawing.Point(217, 560);
             this.btnOpretBolig.Name = "btnOpretBolig";
             this.btnOpretBolig.Size = new System.Drawing.Size(152, 40);
             this.btnOpretBolig.TabIndex = 33;
@@ -106,9 +104,8 @@ namespace RealBolig
             // 
             // btnForslåPris
             // 
-            this.btnForslåPris.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnForslåPris.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForslåPris.Location = new System.Drawing.Point(435, 499);
+            this.btnForslåPris.Location = new System.Drawing.Point(222, 410);
             this.btnForslåPris.Name = "btnForslåPris";
             this.btnForslåPris.Size = new System.Drawing.Size(152, 40);
             this.btnForslåPris.TabIndex = 32;
@@ -117,19 +114,17 @@ namespace RealBolig
             // 
             // mSalgsPrisTextbox
             // 
-            this.mSalgsPrisTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mSalgsPrisTextbox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mSalgsPrisTextbox.Location = new System.Drawing.Point(352, 463);
+            this.mSalgsPrisTextbox.Location = new System.Drawing.Point(139, 374);
             this.mSalgsPrisTextbox.Name = "mSalgsPrisTextbox";
             this.mSalgsPrisTextbox.Size = new System.Drawing.Size(330, 30);
             this.mSalgsPrisTextbox.TabIndex = 31;
             // 
             // labelSalgsPris
             // 
-            this.labelSalgsPris.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelSalgsPris.AutoSize = true;
             this.labelSalgsPris.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSalgsPris.Location = new System.Drawing.Point(237, 463);
+            this.labelSalgsPris.Location = new System.Drawing.Point(24, 374);
             this.labelSalgsPris.Name = "labelSalgsPris";
             this.labelSalgsPris.Size = new System.Drawing.Size(105, 26);
             this.labelSalgsPris.TabIndex = 30;
@@ -137,19 +132,17 @@ namespace RealBolig
             // 
             // mKvmTextbox
             // 
-            this.mKvmTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mKvmTextbox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mKvmTextbox.Location = new System.Drawing.Point(352, 346);
+            this.mKvmTextbox.Location = new System.Drawing.Point(139, 257);
             this.mKvmTextbox.Name = "mKvmTextbox";
             this.mKvmTextbox.Size = new System.Drawing.Size(330, 30);
             this.mKvmTextbox.TabIndex = 29;
             // 
             // labelKvm
             // 
-            this.labelKvm.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelKvm.AutoSize = true;
             this.labelKvm.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKvm.Location = new System.Drawing.Point(286, 346);
+            this.labelKvm.Location = new System.Drawing.Point(73, 257);
             this.labelKvm.Name = "labelKvm";
             this.labelKvm.Size = new System.Drawing.Size(56, 26);
             this.labelKvm.TabIndex = 28;
@@ -157,10 +150,9 @@ namespace RealBolig
             // 
             // labelOmråde
             // 
-            this.labelOmråde.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelOmråde.AutoSize = true;
             this.labelOmråde.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOmråde.Location = new System.Drawing.Point(250, 287);
+            this.labelOmråde.Location = new System.Drawing.Point(37, 198);
             this.labelOmråde.Name = "labelOmråde";
             this.labelOmråde.Size = new System.Drawing.Size(92, 26);
             this.labelOmråde.TabIndex = 26;
@@ -168,19 +160,17 @@ namespace RealBolig
             // 
             // mAdresseTextbox
             // 
-            this.mAdresseTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mAdresseTextbox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mAdresseTextbox.Location = new System.Drawing.Point(352, 231);
+            this.mAdresseTextbox.Location = new System.Drawing.Point(139, 142);
             this.mAdresseTextbox.Name = "mAdresseTextbox";
             this.mAdresseTextbox.Size = new System.Drawing.Size(330, 30);
             this.mAdresseTextbox.TabIndex = 25;
             // 
             // labelAdresse
             // 
-            this.labelAdresse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelAdresse.AutoSize = true;
             this.labelAdresse.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdresse.Location = new System.Drawing.Point(251, 231);
+            this.labelAdresse.Location = new System.Drawing.Point(38, 142);
             this.labelAdresse.Name = "labelAdresse";
             this.labelAdresse.Size = new System.Drawing.Size(91, 26);
             this.labelAdresse.TabIndex = 24;
@@ -188,19 +178,17 @@ namespace RealBolig
             // 
             // mPostNRTextbox
             // 
-            this.mPostNRTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mPostNRTextbox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mPostNRTextbox.Location = new System.Drawing.Point(352, 178);
+            this.mPostNRTextbox.Location = new System.Drawing.Point(139, 89);
             this.mPostNRTextbox.Name = "mPostNRTextbox";
             this.mPostNRTextbox.Size = new System.Drawing.Size(330, 30);
             this.mPostNRTextbox.TabIndex = 23;
             // 
             // labelPostNR
             // 
-            this.labelPostNR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelPostNR.AutoSize = true;
             this.labelPostNR.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPostNR.Location = new System.Drawing.Point(256, 178);
+            this.labelPostNR.Location = new System.Drawing.Point(43, 89);
             this.labelPostNR.Name = "labelPostNR";
             this.labelPostNR.Size = new System.Drawing.Size(86, 26);
             this.labelPostNR.TabIndex = 22;
@@ -208,19 +196,17 @@ namespace RealBolig
             // 
             // mKiDTextbox
             // 
-            this.mKiDTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mKiDTextbox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mKiDTextbox.Location = new System.Drawing.Point(352, 127);
+            this.mKiDTextbox.Location = new System.Drawing.Point(139, 38);
             this.mKiDTextbox.Name = "mKiDTextbox";
             this.mKiDTextbox.Size = new System.Drawing.Size(330, 30);
             this.mKiDTextbox.TabIndex = 21;
             // 
             // labelKiD
             // 
-            this.labelKiD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelKiD.AutoSize = true;
             this.labelKiD.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKiD.Location = new System.Drawing.Point(238, 127);
+            this.labelKiD.Location = new System.Drawing.Point(25, 38);
             this.labelKiD.Name = "labelKiD";
             this.labelKiD.Size = new System.Drawing.Size(104, 26);
             this.labelKiD.TabIndex = 20;
@@ -228,10 +214,9 @@ namespace RealBolig
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabBoligTabel);
             this.tabControl1.Controls.Add(this.tabKundeTabel);
-            this.tabControl1.Location = new System.Drawing.Point(737, 102);
+            this.tabControl1.Location = new System.Drawing.Point(524, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(864, 630);
@@ -413,7 +398,7 @@ namespace RealBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1607, 780);
+            this.ClientSize = new System.Drawing.Size(1390, 780);
             this.Controls.Add(this.mOmrådeTextbox);
             this.Controls.Add(this.btnOpretBolig);
             this.Controls.Add(this.btnForslåPris);
