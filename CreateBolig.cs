@@ -16,7 +16,7 @@ namespace RealBolig
 {
     public partial class CreateBolig : Form
     {
-        string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW"; //Connection string to a local SQL DB
+        
         private const bool test = false;
 
         public CreateBolig()

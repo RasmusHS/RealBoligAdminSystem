@@ -153,18 +153,20 @@ namespace RealBolig.DAL.Operations
             conn.Close();
 
         }
-
+        */
         public void Select(EBolig bSelect)
         {
 
+            SqlConnection conn = new SqlConnection(strconn);
+
             conn.Open();
-            string query = "SELECT * FROM Bolig WHERE " + bSelect.BiD + ";";
+            string query = "SELECT * FROM Bolig where BiD = "+bSelect.BiD+"";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Close();
 
         }
-        */
+        
 
         public static int getbid () {
 
@@ -212,7 +214,56 @@ namespace RealBolig.DAL.Operations
                     return 0;
                     
                 }
-            }
+        }
+
+
+        public static int getpris (EBolig bgetpris) {
+
+                string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW; Encrypt = False";
+
+
+
+                SqlConnection conn = new SqlConnection(strconn);
+                string sqltest = "SELECT SalgsPris FROM Bolig where Bid = "+bgetpris.BiD+"";
+                SqlCommand cmd = new SqlCommand(sqltest, conn);
+
+                using (conn)
+                {
+                    SqlCommand command = new SqlCommand(
+                      "SELECT CategoryID, CategoryName FROM Categories;",
+                      conn);
+                    conn.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            //Console.WriteLine(reader.GetInt32(0));
+                            int testtest = reader.GetInt32(0);
+                            return testtest;
+
+                            
+
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No rows found.");
+                        
+                    }
+
+                    reader.Close();
+                conn.Close();
+
+
+
+                    return 0;
+                    
+                }
+        }
     }
 
 }
