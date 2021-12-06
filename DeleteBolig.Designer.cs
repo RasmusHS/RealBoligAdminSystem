@@ -32,26 +32,6 @@ namespace RealBolig
             this.components = new System.ComponentModel.Container();
             this.boligBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnSletBolig = new System.Windows.Forms.Button();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.kaspermark_dk_db_realboligDataSet = new RealBolig.kaspermark_dk_db_realboligDataSet();
-            this.boligBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.boligTableAdapter = new RealBolig.kaspermark_dk_db_realboligDataSetTableAdapters.BoligTableAdapter();
             this.biDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kiDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.postNRDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,10 +40,16 @@ namespace RealBolig
             this.salgsPrisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salgsDatoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kvmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.boligBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kaspermark_dk_db_realboligDataSet = new RealBolig.kaspermark_dk_db_realboligDataSet();
+            this.btnSletBolig = new System.Windows.Forms.Button();
+            this.mBoligIDTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.labelBiD = new System.Windows.Forms.Label();
+            this.boligTableAdapter = new RealBolig.kaspermark_dk_db_realboligDataSetTableAdapters.BoligTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.boligBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boligBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // boligBindingSource
@@ -89,174 +75,6 @@ namespace RealBolig
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(864, 725);
             this.dataGridView1.TabIndex = 72;
-            // 
-            // btnSletBolig
-            // 
-            this.btnSletBolig.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSletBolig.Location = new System.Drawing.Point(189, 443);
-            this.btnSletBolig.Name = "btnSletBolig";
-            this.btnSletBolig.Size = new System.Drawing.Size(152, 40);
-            this.btnSletBolig.TabIndex = 71;
-            this.btnSletBolig.Text = "Slet Bolig";
-            this.btnSletBolig.UseVisualStyleBackColor = true;
-            // 
-            // maskedTextBox8
-            // 
-            this.maskedTextBox8.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox8.Location = new System.Drawing.Point(108, 407);
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox8.TabIndex = 70;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 407);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 26);
-            this.label8.TabIndex = 69;
-            this.label8.Text = "label8";
-            // 
-            // maskedTextBox7
-            // 
-            this.maskedTextBox7.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(108, 348);
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox7.TabIndex = 68;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 348);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 26);
-            this.label7.TabIndex = 67;
-            this.label7.Text = "label7";
-            // 
-            // maskedTextBox6
-            // 
-            this.maskedTextBox6.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox6.Location = new System.Drawing.Point(108, 291);
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox6.TabIndex = 66;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 291);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 26);
-            this.label6.TabIndex = 65;
-            this.label6.Text = "label6";
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox5.Location = new System.Drawing.Point(108, 231);
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox5.TabIndex = 64;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 231);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 26);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "label5";
-            // 
-            // maskedTextBox4
-            // 
-            this.maskedTextBox4.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(108, 172);
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox4.TabIndex = 62;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 26);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "label4";
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(108, 116);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox3.TabIndex = 60;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 26);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "label3";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(108, 63);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox2.TabIndex = 58;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 26);
-            this.label2.TabIndex = 57;
-            this.label2.Text = "label2";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(108, 12);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox1.TabIndex = 56;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 26);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "label1";
-            // 
-            // kaspermark_dk_db_realboligDataSet
-            // 
-            this.kaspermark_dk_db_realboligDataSet.DataSetName = "kaspermark_dk_db_realboligDataSet";
-            this.kaspermark_dk_db_realboligDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // boligBindingSource1
-            // 
-            this.boligBindingSource1.DataMember = "Bolig";
-            this.boligBindingSource1.DataSource = this.kaspermark_dk_db_realboligDataSet;
-            // 
-            // boligTableAdapter
-            // 
-            this.boligTableAdapter.ClearBeforeFill = true;
             // 
             // biDDataGridViewTextBoxColumn
             // 
@@ -307,6 +125,49 @@ namespace RealBolig
             this.kvmDataGridViewTextBoxColumn.HeaderText = "Kvm";
             this.kvmDataGridViewTextBoxColumn.Name = "kvmDataGridViewTextBoxColumn";
             // 
+            // boligBindingSource1
+            // 
+            this.boligBindingSource1.DataMember = "Bolig";
+            this.boligBindingSource1.DataSource = this.kaspermark_dk_db_realboligDataSet;
+            // 
+            // kaspermark_dk_db_realboligDataSet
+            // 
+            this.kaspermark_dk_db_realboligDataSet.DataSetName = "kaspermark_dk_db_realboligDataSet";
+            this.kaspermark_dk_db_realboligDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnSletBolig
+            // 
+            this.btnSletBolig.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSletBolig.Location = new System.Drawing.Point(209, 48);
+            this.btnSletBolig.Name = "btnSletBolig";
+            this.btnSletBolig.Size = new System.Drawing.Size(152, 40);
+            this.btnSletBolig.TabIndex = 71;
+            this.btnSletBolig.Text = "Slet Bolig";
+            this.btnSletBolig.UseVisualStyleBackColor = true;
+            this.btnSletBolig.Click += new System.EventHandler(this.btnSletBolig_Click);
+            // 
+            // mBoligIDTextBox
+            // 
+            this.mBoligIDTextBox.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mBoligIDTextBox.Location = new System.Drawing.Point(127, 12);
+            this.mBoligIDTextBox.Name = "mBoligIDTextBox";
+            this.mBoligIDTextBox.Size = new System.Drawing.Size(330, 30);
+            this.mBoligIDTextBox.TabIndex = 56;
+            // 
+            // labelBiD
+            // 
+            this.labelBiD.AutoSize = true;
+            this.labelBiD.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBiD.Location = new System.Drawing.Point(31, 12);
+            this.labelBiD.Name = "labelBiD";
+            this.labelBiD.Size = new System.Drawing.Size(88, 26);
+            this.labelBiD.TabIndex = 55;
+            this.labelBiD.Text = "Bolig ID";
+            // 
+            // boligTableAdapter
+            // 
+            this.boligTableAdapter.ClearBeforeFill = true;
+            // 
             // DeleteBolig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,29 +175,15 @@ namespace RealBolig
             this.ClientSize = new System.Drawing.Size(1373, 960);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSletBolig);
-            this.Controls.Add(this.maskedTextBox8);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.maskedTextBox7);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.maskedTextBox6);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.mBoligIDTextBox);
+            this.Controls.Add(this.labelBiD);
             this.Name = "DeleteBolig";
             this.Text = "DeleteBolig";
             this.Load += new System.EventHandler(this.DeleteBolig_Load);
             ((System.ComponentModel.ISupportInitialize)(this.boligBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boligBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kaspermark_dk_db_realboligDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,22 +194,8 @@ namespace RealBolig
         private System.Windows.Forms.BindingSource boligBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSletBolig;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox mBoligIDTextBox;
+        private System.Windows.Forms.Label labelBiD;
         private kaspermark_dk_db_realboligDataSet kaspermark_dk_db_realboligDataSet;
         private System.Windows.Forms.BindingSource boligBindingSource1;
         private kaspermark_dk_db_realboligDataSetTableAdapters.BoligTableAdapter boligTableAdapter;
