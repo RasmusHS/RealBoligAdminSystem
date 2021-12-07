@@ -224,6 +224,7 @@ namespace RealBolig
             this.btnOpdaterBolig.TabIndex = 71;
             this.btnOpdaterBolig.Text = "Opdater Bolig";
             this.btnOpdaterBolig.UseVisualStyleBackColor = true;
+            this.btnOpdaterBolig.Click += new System.EventHandler(this.btnOpdaterBolig_Click);
             // 
             // mSalgsPrisTextBox
             // 
