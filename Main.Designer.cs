@@ -73,7 +73,7 @@ namespace RealBolig
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Sitka Text", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(149)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(609, 15);
+            this.lblTitle.Location = new System.Drawing.Point(567, 15);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(285, 43);
             this.lblTitle.TabIndex = 0;
@@ -95,7 +95,7 @@ namespace RealBolig
             this.pictureLogoBillede.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureLogoBillede.Image = ((System.Drawing.Image)(resources.GetObject("pictureLogoBillede.Image")));
             this.pictureLogoBillede.Location = new System.Drawing.Point(45, 23);
-            this.pictureLogoBillede.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureLogoBillede.Margin = new System.Windows.Forms.Padding(2);
             this.pictureLogoBillede.Name = "pictureLogoBillede";
             this.pictureLogoBillede.Size = new System.Drawing.Size(118, 42);
             this.pictureLogoBillede.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,15 +256,15 @@ namespace RealBolig
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1395, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(1310, 80);
             this.panelTitleBar.TabIndex = 4;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::RealBolig.Properties.Resources.baseline_home_white_24dp;
-            this.pictureBox2.Location = new System.Drawing.Point(715, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(673, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 41);
             this.pictureBox2.TabIndex = 1;
@@ -407,7 +407,7 @@ namespace RealBolig
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(230, 857);
+            this.panelMenu.Size = new System.Drawing.Size(230, 845);
             this.panelMenu.TabIndex = 3;
             // 
             // btnHjælp
@@ -515,16 +515,16 @@ namespace RealBolig
             this.panelFormsLoader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(51)))));
             this.panelFormsLoader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormsLoader.Location = new System.Drawing.Point(230, 80);
-            this.panelFormsLoader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelFormsLoader.Margin = new System.Windows.Forms.Padding(2);
             this.panelFormsLoader.Name = "panelFormsLoader";
-            this.panelFormsLoader.Size = new System.Drawing.Size(1395, 777);
+            this.panelFormsLoader.Size = new System.Drawing.Size(1310, 765);
             this.panelFormsLoader.TabIndex = 5;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1625, 857);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.panelFormsLoader);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);

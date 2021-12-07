@@ -25,5 +25,7 @@ namespace RealBolig
             this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
 
         }
+
+
     }
 }
