@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,12 +15,10 @@ namespace RealBolig.DAL.Operations
     class OBolig
     {
 
-        string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW; Encrypt = False";
-        
-
-        //CRUD
+         //CRUD
         public void Insert(EBolig bInsert)
         {
+            
             // assumption:
             bool KundeID_ok = true, PostNR_ok = true, Adresse_ok = true, Område_ok = true, Kvm_ok = true, SalgsPris_ok = true; ;
 
@@ -168,18 +167,7 @@ namespace RealBolig.DAL.Operations
         }
         */
         public void Select(EBolig bSelect)
-        {
-
-            SqlConnection conn = new SqlConnection(strconn);
-
-            conn.Open();
-            string query = "SELECT * FROM Bolig where Område = "+bSelect.Område+"";
-
-            SqlCommand cmd = new SqlCommand(query, conn);
-
-            conn.Close();
-
-            
+        { 
 
         }
         
