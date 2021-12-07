@@ -14,6 +14,7 @@ namespace RealBolig
 {
     public partial class UpdateBolig : Form
     {
+        string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW; Encrypt = False";
         public UpdateBolig()
         {
             InitializeComponent();
@@ -38,22 +39,22 @@ namespace RealBolig
             bool BiD_ok = true, Salgspris_ok = true, KøbersID_ok = true, KøbsPris_ok = true, Købsdato_ok = true;
 
             // length check:
-            if (KundeTlf.Length > 11) KundeTlf_ok = false;
-            if (Tekst.Length > 50) Tekst_ok = false;
-            if (Pris.Length > 20) Pris_ok = false;
+            if (Salgspris.Length > 23) Salgspris_ok = false;
+            if (KøbsPris.Length > 23) KøbsPris_ok = false;
 
             // "<" check for JS tags ... NO cross site scripting here.:
-            if (KundeTlf.Contains("<")) KundeTlf_ok = false;
-            if (Tekst.Contains("<")) Tekst_ok = false;
-            if (Pris.Contains("<")) Pris_ok = false;
+            if (Salgspris.Contains("<")) Salgspris_ok = false;
+            if (KøbersID.Contains("<")) KøbersID_ok = false;
 
             // Check for alphanumeric characters
             Regex retal = new Regex(@"(^[0-9 ]*$)");
-            if (!retal.IsMatch(KundeTlf)) KundeTlf_ok = false;
+            if (!retal.IsMatch(BiD)) BiD_ok = false;
+            if (!retal.IsMatch(KøbersID)) KøbersID_ok = false;
 
             // Check for alphanumeric characters
             Regex dectal = new Regex(@"(^[0-9 ]*.?[0-9]*$)");
-            if (!dectal.IsMatch(Pris)) Pris_ok = false;
+            if (!dectal.IsMatch(Salgspris)) Salgspris_ok = false;
+            if (!dectal.IsMatch(KøbsPris)) KøbsPris_ok = false;
 
             // action
             if (BiD_ok && Salgspris_ok && KøbersID_ok && KøbsPris_ok && Købsdato_ok)
@@ -62,16 +63,12 @@ namespace RealBolig
                 SqlConnection conn = new SqlConnection(strconn);
 
                 //(CR)U(D):
-                string sqlCom = "UPDATE Ordre SET KundeTlf = @kundetlf, Tekst = @tekst, Pris = @pris WHERE OrdreId = @OrdreId;";
+                string sqlCom = "UPDATE Bolig SET Salgspris = @SalgsPris WHERE BiD = @BiD;";
                 SqlCommand cmd = new SqlCommand(sqlCom, conn);
-                cmd.Parameters.Add("@OrdreId", System.Data.SqlDbType.Int);
-                cmd.Parameters["@OrdreId"].Value = Convert.ToInt32(OrdreId);
-                cmd.Parameters.Add("@kundetlf", System.Data.SqlDbType.VarChar);
-                cmd.Parameters["@kundetlf"].Value = Convert.ToString(KundeTlf);
-                cmd.Parameters.Add("@tekst", System.Data.SqlDbType.VarChar);
-                cmd.Parameters["@tekst"].Value = Convert.ToString(Tekst);
-                cmd.Parameters.Add("@pris", System.Data.SqlDbType.Decimal);
-                cmd.Parameters["@pris"].Value = Convert.ToDecimal(Pris);
+                cmd.Parameters.Add("@BiD", System.Data.SqlDbType.Int);
+                cmd.Parameters["@BiD"].Value = Convert.ToInt32(BiD);
+                cmd.Parameters.Add("@SalgsPris", System.Data.SqlDbType.VarChar);
+                cmd.Parameters["@SalgsPris"].Value = Convert.ToString(Salgspris);
 
                 // Attempt to execute query
                 try
@@ -80,47 +77,35 @@ namespace RealBolig
                     cmd.ExecuteNonQuery();
                     conn.Close();
                     MessageBox.Show("SUCCESS :\n" + sqlCom + "\nmed værdierne: (" +
-                                    cmd.Parameters["@OrdreId"].Value + ", " +
-                                    cmd.Parameters["@kundetlf"].Value + ", " +
-                                    cmd.Parameters["@tekst"].Value + ", " +
-                                    cmd.Parameters["@pris"].Value +
+                                    cmd.Parameters["@BiD"].Value + ", " +
+                                    cmd.Parameters["@SalgsPris"].Value +
                                     ")");
-                    maskedOIDTextBox.Text = "";
-                    maskedKtlfTextBox.Text = "";
-                    maskedTekstBox.Text = "";
-                    maskedPrisTextBox.Text = "";
+                    mBiDTextBox.Text = "";
+                    mSalgsPrisTextBox.Text = "";
                     this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
                 }
 
                 catch (Exception exc)
                 {
                     MessageBox.Show("ERROR: \n\n" + exc.ToString());
-                    maskedOIDTextBox.Text = "";
-                    maskedKtlfTextBox.Text = "";
-                    maskedTekstBox.Text = "";
-                    maskedPrisTextBox.Text = "";
+                    mBiDTextBox.Text = "";
+                    mSalgsPrisTextBox.Text = "";
                 }
             }
-            else if (!KundeTlf_ok) //Fejl besked for Kunde Tlf. feltet
+            else if (!BiD_ok) //Fejl besked for Kunde Tlf. feltet
             {
-                MessageBox.Show("Der må kun indtastes tal i Kunde Tlf. feltet, samt maks 11 tegn.");
-                maskedOIDTextBox.Text = "";
-                maskedKtlfTextBox.Text = "";
+                MessageBox.Show("Der må kun indtastes tal i BiD feltet");
+                mBiDTextBox.Text = "";
             }
 
-            else if (!Tekst_ok) //Fejl besked for Tekst feltet
+            else if (!Salgspris_ok) //Fejl besked for Tekst feltet
             {
-                MessageBox.Show("Der må maks være 50 tegn i Tekst feltet.");
-                maskedOIDTextBox.Text = "";
-                maskedTekstBox.Text = "";
+                MessageBox.Show("Der må maks være 23 tegn i Salgspris feltet.");
+                mSalgsPrisTextBox.Text = "";
             }
 
-            else if (!Pris_ok) //Fejl besked for Pris feltet
-            {
-                MessageBox.Show("Der må kun indtastes tal og et komma/punktum i Pris feltet, samt maks 50 tegn og maks 2 decimaler.");
-                maskedOIDTextBox.Text = "";
-                maskedPrisTextBox.Text = "";
-            }
+
+
         }
     }
 }
