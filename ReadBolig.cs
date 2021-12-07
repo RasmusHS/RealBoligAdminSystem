@@ -30,18 +30,22 @@ namespace RealBolig
 
         private void btnIndlæsBolig_Click(object sender, EventArgs e)
         {
-            string område = tbOmråde.Text;
+           DisplayData();
 
-            EBolig bolig = new EBolig("0", "0", "0", område, "0", "0", 0);
-            OBolig boligOP = new OBolig();
+        }
+        public void DisplayData()
+        {
+            string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW; Encrypt = False";
 
-            boligOP.Select(bolig);
-
+            SqlConnection conn = new SqlConnection(strconn);
             
-            dataGridView1.Refresh();
-            MessageBox.Show("Record Updated");
-
-
+            
+            conn.Open();
+            DataTable dt = new DataTable();
+            SqlDataAdapter adapt = new SqlDataAdapter("SELECT * FROM Bolig where Område = '" + tbOmråde.Text + "'", conn);
+            adapt.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
         }
     }
 }

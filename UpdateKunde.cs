@@ -16,5 +16,12 @@ namespace RealBolig
         {
             InitializeComponent();
         }
+
+        private void UpdateKunde_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet1.Kunde' table. You can move, or remove it, as needed.
+            this.kundeTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet1.Kunde);
+
+        }
     }
 }
