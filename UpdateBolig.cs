@@ -22,8 +22,10 @@ namespace RealBolig
 
         private void UpdateBolig_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet.Bolig' table. You can move, or remove it, as needed.
-            this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
+            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet3.Bolig_Status' table. You can move, or remove it, as needed.
+            this.bolig_StatusTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet3.Bolig_Status);
+            // TODO: This line of code loads data into the 'kaspermark_dk_db_realboligDataSet3.Bolig' table. You can move, or remove it, as needed.
+            this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet3.Bolig);
 
         }
 
@@ -31,12 +33,12 @@ namespace RealBolig
         {
             string BiD = mBiDTextBox.Text;
             string Salgspris = mSalgsPrisTextBox.Text;
-            string KøbersID = mKøberIDTextBox.Text;
-            string KøbsPris = mKøbsPrisTextBox.Text;
-            string Købsdato = mKøbsDatoTextBox.Text;
+            string KiD = mKøberIDTextBox.Text;
+            string HandelsPris = mKøbsPrisTextBox.Text;
+            string HandelsDato = mKøbsDatoTextBox.Text;
 
             // assumption:
-            bool BiD_ok = true, Salgspris_ok = true, KøbersID_ok = true, KøbsPris_ok = true, Købsdato_ok = true;
+            bool BiD_ok = true, Salgspris_ok = true, KiD_ok = true, HandelsPris_ok = true, HandelsDato_ok = true;
 
             if (CbBoligSolgt.Checked != true)
             {
@@ -44,24 +46,24 @@ namespace RealBolig
 
                 // length check:
                 if (Salgspris.Length > 23) Salgspris_ok = false;
-                if (KøbsPris.Length > 23) KøbsPris_ok = false;
+                if (HandelsPris.Length > 23) HandelsPris_ok = false;
 
                 // "<" check for JS tags ... NO cross site scripting here.:
                 if (Salgspris.Contains("<")) Salgspris_ok = false;
-                if (KøbersID.Contains("<")) KøbersID_ok = false;
+                if (KiD.Contains("<")) KiD_ok = false;
 
                 // Check for alphanumeric characters
                 Regex retal = new Regex(@"(^[0-9 ]*$)");
                 if (!retal.IsMatch(BiD)) BiD_ok = false;
-                if (!retal.IsMatch(KøbersID)) KøbersID_ok = false;
+                if (!retal.IsMatch(KiD)) KiD_ok = false;
 
                 // Check for alphanumeric characters
                 Regex dectal = new Regex(@"(^[0-9 ]*.?[0-9]*$)");
                 if (!dectal.IsMatch(Salgspris)) Salgspris_ok = false;
-                if (!dectal.IsMatch(KøbsPris)) KøbsPris_ok = false;
+                if (!dectal.IsMatch(HandelsPris)) HandelsPris_ok = false;
 
                 // action
-                if (BiD_ok && Salgspris_ok && KøbersID_ok && KøbsPris_ok && Købsdato_ok)
+                if (BiD_ok && Salgspris_ok && KiD_ok && HandelsPris_ok && HandelsDato_ok)
                 {
                     // database med kundetabel:
                     SqlConnection conn = new SqlConnection(strconn);
@@ -86,7 +88,7 @@ namespace RealBolig
                                         ")");
                         mBiDTextBox.Text = "";
                         mSalgsPrisTextBox.Text = "";
-                        this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
+                        this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet3.Bolig);
                     }
 
                     catch (Exception exc)
@@ -115,24 +117,24 @@ namespace RealBolig
 
                 // length check:
                 if (Salgspris.Length > 23) Salgspris_ok = false;
-                if (KøbsPris.Length > 23) KøbsPris_ok = false;
+                if (HandelsPris.Length > 23) HandelsPris_ok = false;
 
                 // "<" check for JS tags ... NO cross site scripting here.:
                 if (Salgspris.Contains("<")) Salgspris_ok = false;
-                if (KøbersID.Contains("<")) KøbersID_ok = false;
+                if (KiD.Contains("<")) KiD_ok = false;
 
                 // Check for alphanumeric characters
                 Regex retal = new Regex(@"(^[0-9 ]*$)");
                 if (!retal.IsMatch(BiD)) BiD_ok = false;
-                if (!retal.IsMatch(KøbersID)) KøbersID_ok = false;
+                if (!retal.IsMatch(KiD)) KiD_ok = false;
 
                 // Check for alphanumeric characters
                 Regex dectal = new Regex(@"(^[0-9 ]*.?[0-9]*$)");
                 if (!dectal.IsMatch(Salgspris)) Salgspris_ok = false;
-                if (!dectal.IsMatch(KøbsPris)) KøbsPris_ok = false;
+                if (!dectal.IsMatch(HandelsPris)) HandelsPris_ok = false;
 
                 // action
-                if (BiD_ok && Salgspris_ok && KøbersID_ok && KøbsPris_ok && Købsdato_ok)
+                if (BiD_ok && Salgspris_ok && KiD_ok && HandelsPris_ok && HandelsDato_ok)
                 {
                     // database med kundetabel:
                     SqlConnection conn = new SqlConnection(strconn);
@@ -147,27 +149,29 @@ namespace RealBolig
                     cmd.Parameters.Add("@Solgt", System.Data.SqlDbType.Bit);
                     cmd.Parameters["@Solgt"].Value = Convert.ToBoolean(Solgt);
 
-                    string sqlCom2 = "UPDATE Bolig_Status SET KøbersID = @KiD, KøbsPris = @HandelsPris, Købsdato = @HandelsDato WHERE BiD = @BiD;";
+                    string sqlCom2 = "UPDATE Bolig_Status SET KiD = @KiD, HandelsPris = @HandelsPris, HandelsDato = @HandelsDato WHERE BiD = @BiD;";
                     SqlCommand cmd2 = new SqlCommand(sqlCom2, conn);
                     cmd2.Parameters.Add("@BiD", System.Data.SqlDbType.Int);
                     cmd2.Parameters["@BiD"].Value = Convert.ToInt32(BiD);
                     cmd2.Parameters.Add("@KiD", System.Data.SqlDbType.Int);
-                    cmd2.Parameters["@KiD"].Value = Convert.ToInt32(KøbersID);
+                    cmd2.Parameters["@KiD"].Value = Convert.ToInt32(KiD);
                     cmd2.Parameters.Add("@HandelsPris", System.Data.SqlDbType.Decimal);
-                    cmd2.Parameters["@HandelsPris"].Value = Convert.ToDouble(KøbsPris);
+                    cmd2.Parameters["@HandelsPris"].Value = Convert.ToDouble(HandelsPris);
 
                     /*DateTime idag = DateTime.Now;
                     string Sidag = Convert.ToString(idag);
                     string S2idag = $"{Sidag.Substring(4, 4)}-{Sidag.Substring(2, 2)}-{Sidag.Substring(0, 2)}";*/
+                    //Convert.ToDateTime(Købsdato)
 
                     cmd2.Parameters.Add("@HandelsDato", System.Data.SqlDbType.Date);
-                    cmd2.Parameters["@HandelsDato"].Value = Convert.ToString(Købsdato);
+                    cmd2.Parameters["@HandelsDato"].Value = $"{HandelsDato.Substring(4, 4)}-{HandelsDato.Substring(2, 2)}-{HandelsDato.Substring(0, 2)}";
 
                     // Attempt to execute query
                     try
                     {
                         conn.Open();
                         cmd.ExecuteNonQuery();
+                        cmd2.ExecuteNonQuery();
                         conn.Close();
                         MessageBox.Show("SUCCESS :\n" + sqlCom + "\nmed værdierne: (" +
                                         cmd.Parameters["@BiD"].Value + ", " +
@@ -178,7 +182,8 @@ namespace RealBolig
                         mKøberIDTextBox.Text = "";
                         mKøbsPrisTextBox.Text = "";
                         mKøbsDatoTextBox.Text = "";
-                        this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet.Bolig);
+                        this.boligTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet3.Bolig);
+                        this.bolig_StatusTableAdapter.Fill(this.kaspermark_dk_db_realboligDataSet3.Bolig_Status);
                     }
 
                     catch (Exception exc)
