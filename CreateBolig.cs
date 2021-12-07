@@ -43,7 +43,7 @@ namespace RealBolig
             string SalgsPris = mSalgsPrisTextbox.Text;
             //string SalgsDato = "";
 
-            EBolig bolig = new EBolig(KiD, PostNR, Adresse, Område, SalgsPris, Kvm);
+            EBolig bolig = new EBolig(KiD, PostNR, Adresse, Område, SalgsPris, Kvm, 0);
             OBolig boligOP = new OBolig();
 
             boligOP.Insert(bolig);

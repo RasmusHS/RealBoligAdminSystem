@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace RealBolig.DAL.Operations
 {
+    
     class OBolig
     {
 
@@ -42,10 +43,11 @@ namespace RealBolig.DAL.Operations
             if (KundeID_ok && PostNR_ok && Adresse_ok && Område_ok && Kvm_ok && SalgsPris_ok)
             {
                 // database med bolig tabel:
+                string strconn = @"Data Source=mssql2.unoeuro.com;Initial Catalog=kaspermark_dk_db_realbolig;Persist Security Info=True;User ID=kaspermark_dk;Password=69qom3u9PW; Encrypt = False";
                 SqlConnection conn = new SqlConnection(strconn);
 
                 //C(RUD):
-                string sqlCom = "INSERT INTO Bolig VALUES (@KiD, @PostNR, @Adresse, @Område, @SalgsPris, @SalgsDato, @Kvm);";
+                string sqlCom = "INSERT INTO Bolig VALUES (@KiD, @PostNR, @Adresse, @Område, @SalgsPris, @SalgsDato, @Kvm, "+bInsert.Solgt+");";
                 SqlCommand cmd = new SqlCommand(sqlCom, conn);
 
                 cmd.Parameters.Add("@KiD", System.Data.SqlDbType.Int);
@@ -88,6 +90,15 @@ namespace RealBolig.DAL.Operations
                                     cmd.Parameters["@SalgsDato"].Value + ", " +
                                     cmd.Parameters["@Kvm"].Value +
                                     ")");
+
+                    SqlConnection conn2 = new SqlConnection(strconn);
+                    string sqlCom2 = "INSERT INTO Bolig_Status VALUES (null, null, " + getbid() + ", null);";
+                    SqlCommand cmd2 = new SqlCommand(sqlCom2, conn2);
+                    conn2.Open();
+                    cmd2.ExecuteNonQuery();
+                    conn2.Close();
+
+
                 }
                 catch (Exception exc)
                 {
@@ -130,6 +141,8 @@ namespace RealBolig.DAL.Operations
                 MessageBox.Show("Der må kun indtastes tal i Salgs Pris feltet, samt maks 23 tegn.");
                 
             }
+
+            
             
         }
 
