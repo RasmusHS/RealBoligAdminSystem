@@ -17,10 +17,11 @@ namespace RealBolig.DAL.Entities
         public string Område { get; set; }
         public string SalgsPris { get; set; }
         public string Kvm { get; set; }
+        public int Solgt { get; set;}
 
 
 
-        public EBolig(string KiD, string PostNR, string Adresse, string Område, string SalgsPris, string Kvm)
+        public EBolig(string KiD, string PostNR, string Adresse, string Område, string SalgsPris, string Kvm, int Solgt)
         {
 
             this.KiD = KiD;
@@ -29,6 +30,7 @@ namespace RealBolig.DAL.Entities
             this.Område = Område;
             this.SalgsPris = SalgsPris;
             this.Kvm = Kvm;
+            this.Solgt = Solgt;
 
         }
 

@@ -13,7 +13,7 @@ namespace RealBolig.DAL.Entities
         public double handelsPris { get; set; }
         public DateTime handelsDato { get; set; }
         public bool købt { get; set; }
-        public int BiD { get; set; }
+        public int BiD { get; set;}
         public int KiD { get; set; }
 
 
