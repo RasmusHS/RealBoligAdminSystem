@@ -232,6 +232,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>kaspermark_dk_db_realboligDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="kaspermark_dk_db_realboligDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kaspermark_dk_db_realboligDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +307,9 @@
     <EmbeddedResource Include="ReadBolig.resx">
       <DependentUpon>ReadBolig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReadKunde.resx">
+      <DependentUpon>ReadKunde.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateBolig.resx">
       <DependentUpon>UpdateBolig.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,6 +337,17 @@
     </None>
     <None Include="kaspermark_dk_db_realboligDataSet1.xss">
       <DependentUpon>kaspermark_dk_db_realboligDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kaspermark_dk_db_realboligDataSet2.xsc">
+      <DependentUpon>kaspermark_dk_db_realboligDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kaspermark_dk_db_realboligDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kaspermark_dk_db_realboligDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kaspermark_dk_db_realboligDataSet2.xss">
+      <DependentUpon>kaspermark_dk_db_realboligDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
