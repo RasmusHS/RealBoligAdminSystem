@@ -43,21 +43,7 @@ namespace RealBolig
             this.boligBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kaspermark_dk_db_realboligDataSet = new RealBolig.kaspermark_dk_db_realboligDataSet();
             this.btnIndlæsBolig = new System.Windows.Forms.Button();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.tbOmråde = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.boligTableAdapter = new RealBolig.kaspermark_dk_db_realboligDataSetTableAdapters.BoligTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.boligBindingSource)).BeginInit();
@@ -85,59 +71,77 @@ namespace RealBolig
             this.salgsDatoDataGridViewTextBoxColumn,
             this.kvmDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.boligBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(504, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(1176, 27);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(864, 725);
+            this.dataGridView1.RowHeadersWidth = 92;
+            this.dataGridView1.Size = new System.Drawing.Size(2016, 1617);
             this.dataGridView1.TabIndex = 55;
             // 
             // biDDataGridViewTextBoxColumn
             // 
             this.biDDataGridViewTextBoxColumn.DataPropertyName = "BiD";
             this.biDDataGridViewTextBoxColumn.HeaderText = "BiD";
+            this.biDDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.biDDataGridViewTextBoxColumn.Name = "biDDataGridViewTextBoxColumn";
             this.biDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.biDDataGridViewTextBoxColumn.Width = 225;
             // 
             // kiDDataGridViewTextBoxColumn
             // 
             this.kiDDataGridViewTextBoxColumn.DataPropertyName = "KiD";
             this.kiDDataGridViewTextBoxColumn.HeaderText = "KiD";
+            this.kiDDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.kiDDataGridViewTextBoxColumn.Name = "kiDDataGridViewTextBoxColumn";
+            this.kiDDataGridViewTextBoxColumn.Width = 225;
             // 
             // postNRDataGridViewTextBoxColumn
             // 
             this.postNRDataGridViewTextBoxColumn.DataPropertyName = "PostNR";
             this.postNRDataGridViewTextBoxColumn.HeaderText = "PostNR";
+            this.postNRDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.postNRDataGridViewTextBoxColumn.Name = "postNRDataGridViewTextBoxColumn";
+            this.postNRDataGridViewTextBoxColumn.Width = 225;
             // 
             // adresseDataGridViewTextBoxColumn
             // 
             this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
             this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            this.adresseDataGridViewTextBoxColumn.Width = 225;
             // 
             // områdeDataGridViewTextBoxColumn
             // 
             this.områdeDataGridViewTextBoxColumn.DataPropertyName = "Område";
             this.områdeDataGridViewTextBoxColumn.HeaderText = "Område";
+            this.områdeDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.områdeDataGridViewTextBoxColumn.Name = "områdeDataGridViewTextBoxColumn";
+            this.områdeDataGridViewTextBoxColumn.Width = 225;
             // 
             // salgsPrisDataGridViewTextBoxColumn
             // 
             this.salgsPrisDataGridViewTextBoxColumn.DataPropertyName = "SalgsPris";
             this.salgsPrisDataGridViewTextBoxColumn.HeaderText = "SalgsPris";
+            this.salgsPrisDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.salgsPrisDataGridViewTextBoxColumn.Name = "salgsPrisDataGridViewTextBoxColumn";
+            this.salgsPrisDataGridViewTextBoxColumn.Width = 225;
             // 
             // salgsDatoDataGridViewTextBoxColumn
             // 
             this.salgsDatoDataGridViewTextBoxColumn.DataPropertyName = "SalgsDato";
             this.salgsDatoDataGridViewTextBoxColumn.HeaderText = "SalgsDato";
+            this.salgsDatoDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.salgsDatoDataGridViewTextBoxColumn.Name = "salgsDatoDataGridViewTextBoxColumn";
+            this.salgsDatoDataGridViewTextBoxColumn.Width = 225;
             // 
             // kvmDataGridViewTextBoxColumn
             // 
             this.kvmDataGridViewTextBoxColumn.DataPropertyName = "Kvm";
             this.kvmDataGridViewTextBoxColumn.HeaderText = "Kvm";
+            this.kvmDataGridViewTextBoxColumn.MinimumWidth = 11;
             this.kvmDataGridViewTextBoxColumn.Name = "kvmDataGridViewTextBoxColumn";
+            this.kvmDataGridViewTextBoxColumn.Width = 225;
             // 
             // boligBindingSource1
             // 
@@ -152,156 +156,34 @@ namespace RealBolig
             // btnIndlæsBolig
             // 
             this.btnIndlæsBolig.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIndlæsBolig.Location = new System.Drawing.Point(195, 443);
+            this.btnIndlæsBolig.Location = new System.Drawing.Point(389, 311);
+            this.btnIndlæsBolig.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnIndlæsBolig.Name = "btnIndlæsBolig";
-            this.btnIndlæsBolig.Size = new System.Drawing.Size(152, 40);
+            this.btnIndlæsBolig.Size = new System.Drawing.Size(355, 89);
             this.btnIndlæsBolig.TabIndex = 54;
             this.btnIndlæsBolig.Text = "Indlæs Bolig";
             this.btnIndlæsBolig.UseVisualStyleBackColor = true;
+            this.btnIndlæsBolig.Click += new System.EventHandler(this.btnIndlæsBolig_Click);
             // 
-            // maskedTextBox8
+            // tbOmråde
             // 
-            this.maskedTextBox8.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox8.Location = new System.Drawing.Point(114, 407);
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox8.TabIndex = 53;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 407);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 26);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "label8";
-            // 
-            // maskedTextBox7
-            // 
-            this.maskedTextBox7.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(114, 348);
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox7.TabIndex = 51;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 348);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 26);
-            this.label7.TabIndex = 50;
-            this.label7.Text = "label7";
-            // 
-            // maskedTextBox6
-            // 
-            this.maskedTextBox6.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox6.Location = new System.Drawing.Point(114, 291);
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox6.TabIndex = 49;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(18, 291);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 26);
-            this.label6.TabIndex = 48;
-            this.label6.Text = "label6";
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox5.Location = new System.Drawing.Point(114, 231);
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox5.TabIndex = 47;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 231);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 26);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "label5";
-            // 
-            // maskedTextBox4
-            // 
-            this.maskedTextBox4.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(114, 172);
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox4.TabIndex = 45;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 26);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "label4";
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(114, 116);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox3.TabIndex = 43;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 26);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "label3";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(114, 63);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox2.TabIndex = 41;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 26);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "label2";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(114, 12);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(330, 30);
-            this.maskedTextBox1.TabIndex = 39;
+            this.tbOmråde.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOmråde.Location = new System.Drawing.Point(389, 27);
+            this.tbOmråde.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tbOmråde.Name = "tbOmråde";
+            this.tbOmråde.Size = new System.Drawing.Size(765, 59);
+            this.tbOmråde.TabIndex = 39;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 12);
+            this.label1.Location = new System.Drawing.Point(19, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 26);
+            this.label1.Size = new System.Drawing.Size(356, 58);
             this.label1.TabIndex = 38;
-            this.label1.Text = "label1";
+            this.label1.Text = "Indtast område";
             // 
             // boligTableAdapter
             // 
@@ -309,27 +191,14 @@ namespace RealBolig
             // 
             // ReadBolig
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1378, 932);
+            this.ClientSize = new System.Drawing.Size(3004, 1953);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnIndlæsBolig);
-            this.Controls.Add(this.maskedTextBox8);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.maskedTextBox7);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.maskedTextBox6);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.tbOmråde);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "ReadBolig";
             this.Text = "ReadBolig";
             this.Load += new System.EventHandler(this.ReadBolig_Load);
@@ -347,21 +216,7 @@ namespace RealBolig
         private System.Windows.Forms.BindingSource boligBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnIndlæsBolig;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox tbOmråde;
         private System.Windows.Forms.Label label1;
         private kaspermark_dk_db_realboligDataSet kaspermark_dk_db_realboligDataSet;
         private System.Windows.Forms.BindingSource boligBindingSource1;

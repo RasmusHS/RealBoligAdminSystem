@@ -89,7 +89,7 @@ namespace RealBolig.DAL.Operations
                                     cmd.Parameters["@SalgsPris"].Value + ", " +
                                     cmd.Parameters["@SalgsDato"].Value + ", " +
                                     cmd.Parameters["@Kvm"].Value +
-                                    ")");
+                                    ")");   
 
                     SqlConnection conn2 = new SqlConnection(strconn);
                     string sqlCom2 = "INSERT INTO Bolig_Status VALUES (null, null, " + getbid() + ", null);";
@@ -173,10 +173,13 @@ namespace RealBolig.DAL.Operations
             SqlConnection conn = new SqlConnection(strconn);
 
             conn.Open();
-            string query = "SELECT * FROM Bolig where BiD = "+bSelect.BiD+"";
+            string query = "SELECT * FROM Bolig where Område = "+bSelect.Område+"";
 
             SqlCommand cmd = new SqlCommand(query, conn);
+
             conn.Close();
+
+            
 
         }
         
